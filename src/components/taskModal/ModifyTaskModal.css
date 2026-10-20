@@ -1,0 +1,107 @@
+.modify-modal-overlay {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
+}
+
+.modify-modal-overlay > form,
+.modify-modal-overlay .form {
+    width: 100%;
+    max-width: 520px;
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #15111f;
+    border: 1px solid #2a2238;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.modify-modal-title {
+    /*position: absolute;*/
+    /*top: calc(50% - 290px);*/
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modify-label {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-title-input,
+.form-description-textarea,
+.modify-select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    border: 1px solid #3b3350;
+    border-radius: 8px;
+    background-color: #08060d;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.form-description-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-title-input:focus,
+.form-description-textarea:focus,
+.modify-select:focus {
+    outline: none;
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.18);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.modify-cancel-button,
+.modify-save-button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.modify-cancel-button {
+    background-color: #4b5563;
+}
+
+.modify-cancel-button:hover {
+    background-color: #374151;
+}
+
+.modify-save-button {
+    background-color: #f59e0b;
+}
+
+.modify-save-button:hover {
+    background-color: #d97706;
+}
