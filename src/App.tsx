@@ -3,15 +3,17 @@
 import './App.css'
 import SearchBar from './components/SearchBar/SearchBar'
 import Header from './components/Header/Header'
-import {ModifyTaskModal} from "./components/taskModal/modifyTaskModal.tsx";
+import Content from './components/Content/Content'
+//import {ModifyTaskModal} from "./components/taskModal/modifyTaskModal.tsx";
 
 function App() {
 
   return (
-    <body className="background-task-interface">
+    <main className="background-task-interface">
       <Header />
       <SearchBar />
-    </body>
+      <Content />
+    </main>
   )
 }
 
